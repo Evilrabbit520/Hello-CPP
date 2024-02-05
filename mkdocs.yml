@@ -1,0 +1,51 @@
+# Configuration
+site_name: Hello C++
+theme:
+  name: material
+  custom_dir: overrides
+  icon:
+    repo: fontawesome/brands/github
+  features:
+    - navigation.indexes
+
+# Repository
+repo_name: Evilrabbit520/Hello-CPP
+repo_url: https://github.com/Evilrabbit520/Hello-CPP.git
+# edit_uri: tree/main/docs
+version: 1.0.0
+
+extra:
+  alternate:
+    - name: 中文
+      link: /
+      lang: zh
+    # - name: English
+    #   link: /en/
+    #   lang: en
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/Evilrabbit520/Hello-CPP
+    - icon: fontawesome/solid/code
+      link: https://github.com/Evilrabbit520/Hello-CPP/code
+  generator: false
+
+# Extensions
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+
+# Copyright
+copyright: Copyright &copy; 2024 Wang Yujia
+
+# Page tree
+nav:
+- 第 0 章 &nbsp; 前言:
+    # [icon: material/book-open-outline]
+    - Preface/index.md
+    - 0.1 &nbsp; 关于本书: Preface/aboutTheBook.md
+    - 0.2 &nbsp; 如何使用本书: Preface/howToUse.md
+    - 0.3 &nbsp; 小结: Preface/summary.md
+- 第 1 章 &nbsp; 基础知识:
+    # [icon: material/book-open-outline]
+    - BasicKnowledge/index.md
