@@ -33,7 +33,7 @@ jobs:
           host: ${{ secrets.SERVER_HOST }}
           username: ${{ secrets.SERVER_USERNAME }}
           key: ${{ secrets.SERVER_PRIVATE_KEY }}
-          source: ./site/
+          source: ./site/*
           target: /www/wwwroot/www.hi-cpp.com/
 
       - name: Clean up
