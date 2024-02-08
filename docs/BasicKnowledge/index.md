@@ -23,7 +23,7 @@ comments: true
 
 </div>
 
-<p align="center"> 图 1-1-1 &nbsp; 本书主要内容 </p>
+<p align="center"> 图 1-1-1 &nbsp; 编程语言排行 </p>
 
 
 
