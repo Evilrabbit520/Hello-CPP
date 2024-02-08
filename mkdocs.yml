@@ -8,12 +8,32 @@ theme:
   features:
     - content.action.edit
     - navigation.indexes
+  palette: 
+    # Palette toggle for automatic mode
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      primary: white
+      scheme: default 
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to system preference
 
 # Repository
 repo_name: Evilrabbit520/Hello-CPP
 repo_url: https://github.com/Evilrabbit520/Hello-CPP
 edit_uri: tree/main/docs
-version: 1.0.0
 
 extra:
   alternate:
