@@ -6,12 +6,13 @@ theme:
   icon:
     repo: fontawesome/brands/github
   features:
+    - content.action.edit
     - navigation.indexes
 
 # Repository
 repo_name: Evilrabbit520/Hello-CPP
-repo_url: https://github.com/Evilrabbit520/Hello-CPP.git
-# edit_uri: tree/main/docs
+repo_url: https://github.com/Evilrabbit520/Hello-CPP
+edit_uri: tree/main/docs
 version: 1.0.0
 
 extra:
@@ -58,3 +59,4 @@ nav:
 - 第 1 章 &nbsp; 基础知识:
     # [icon: material/book-open-outline]
     - BasicKnowledge/index.md
+    - 1.1 &nbsp; C++ 简介: BasicKnowledge/cppSynopsis.md
