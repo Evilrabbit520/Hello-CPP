@@ -6,13 +6,34 @@ theme:
   icon:
     repo: fontawesome/brands/github
   features:
+    - content.action.edit
     - navigation.indexes
+  palette: 
+    # Palette toggle for automatic mode
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      primary: white
+      scheme: default 
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to system preference
 
 # Repository
 repo_name: Evilrabbit520/Hello-CPP
-repo_url: https://github.com/Evilrabbit520/Hello-CPP.git
-# edit_uri: tree/main/docs
-version: 1.0.0
+repo_url: https://github.com/Evilrabbit520/Hello-CPP
+edit_uri: tree/main/docs
 
 extra:
   alternate:
@@ -34,6 +55,15 @@ markdown_extensions:
   - admonition
   - pymdownx.details
   - pymdownx.superfences
+  - md_in_html
+  - tables
+  - footnotes
+
+extra_css:
+  - stylesheets/extra.css
+
+# extra_javascript:
+  # - javascripts/extra.js
 
 # Copyright
 copyright: Copyright &copy; 2024 Wang Yujia
@@ -49,3 +79,4 @@ nav:
 - 第 1 章 &nbsp; 基础知识:
     # [icon: material/book-open-outline]
     - BasicKnowledge/index.md
+    - 1.1 &nbsp; C++ 简介: BasicKnowledge/cppSynopsis.md
