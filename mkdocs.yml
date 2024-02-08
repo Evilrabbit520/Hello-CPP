@@ -34,6 +34,7 @@ theme:
 repo_name: Evilrabbit520/Hello-CPP
 repo_url: https://github.com/Evilrabbit520/Hello-CPP
 edit_uri: tree/main/docs
+version: 1.0.0
 
 extra:
   alternate:
