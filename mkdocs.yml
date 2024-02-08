@@ -34,6 +34,15 @@ markdown_extensions:
   - admonition
   - pymdownx.details
   - pymdownx.superfences
+  - md_in_html
+  - tables
+  - footnotes
+
+extra_css:
+  - stylesheets/extra.css
+
+# extra_javascript:
+  # - javascripts/extra.js
 
 # Copyright
 copyright: Copyright &copy; 2024 Wang Yujia
