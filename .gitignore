@@ -8,6 +8,9 @@
 # mkdocs files
 .cache/
 
+# imgSrc
+/imgSrc
+
 # build
 /build
 /site
