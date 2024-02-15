@@ -92,3 +92,6 @@ nav:
     - 1.2 &nbsp; 面向对象和泛型: BasicKnowledge/oop-gp.md
     - 1.3 &nbsp; C++ 简介及标准: BasicKnowledge/cppHistory.md
     - 1.4 &nbsp; 安装IDE: BasicKnowledge/installIDE.md
+- 第 2 章 &nbsp; 踏上 C++ 之旅:
+    # [icon: material/book-open-outline]
+    - StartLearningCpp/index.md
