@@ -6,6 +6,6 @@
     box-shadow: var(--md-shadow-z2);
 }
 
-p {
+p:not(.admonition-title) {
     text-indent: 2em !important; /* 两个中文字符的宽度作为一个缩进单位 */
 }
