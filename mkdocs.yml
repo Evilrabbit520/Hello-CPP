@@ -9,6 +9,8 @@ theme:
     - content.action.edit
     - navigation.indexes
     - content.tabs.link
+    - content.code.copy
+    - content.code.annotate
   palette: 
     # Palette toggle for automatic mode
     - media: "(prefers-color-scheme)"
@@ -95,3 +97,4 @@ nav:
 - 第 2 章 &nbsp; 踏上 C++ 之旅:
     # [icon: material/book-open-outline]
     - StartLearningCpp/index.md
+    - 2.1 &nbsp; 正式学习 C++: StartLearningCpp/startCpp.md
