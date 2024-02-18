@@ -1,0 +1,13 @@
+*.cpp linguist-language=C++
+*.hpp linguist-language=C++
+*.c linguist-language=C++
+*.h linguist-language=C++
+
+*.html linguist-language=html
+*.js linguist-language=JavaScript
+
+*.yml linguist-detectable=false
+*.yaml linguist-detectable=false
+
+*.md linguist-detectable=false
+*.css linguist-detectable=false
