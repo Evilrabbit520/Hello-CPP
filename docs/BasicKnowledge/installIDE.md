@@ -19,6 +19,8 @@ IDE(Integrated Development Environment，即集成开发环境)。是一种软�
 | Visual Studio Code    | ALL     | 免费        | `简单` |轻量级、开源的代码编辑器，支持多种编程语言，使用 VSCode 进行 C++ 开发通常需要配置适当的插件和工具链。    |
 | CLion                 | ALL     | 付费        | `简单` |CLion 是一个专注于 C 和 C++ 开发的强大 IDE，提供了丰富的功能和工具，适用于各种 C/C++ 项目。    |
 
+<p align="center"> 表 1-4-1 &nbsp; IDE 功能比对 </p>
+
 ## 1.4.3 IDE 下载地址
 
 | IDE                   | 适用平台 | 是否免费 | 下载地址                                                  |
@@ -29,6 +31,8 @@ IDE(Integrated Development Environment，即集成开发环境)。是一种软�
 | Xcode                 | MacOS   | Apple免费   | [https://developer.apple.com/cn/xcode/resources/](https://developer.apple.com/cn/xcode/resources/) |
 | Visual Studio Code    | ALL     | 免费        | [https://code.visualstudio.com/Download](https://code.visualstudio.com/Download) |
 | CLion                 | ALL     | 付费        | [https://www.jetbrains.com/clion/](https://www.jetbrains.com/clion/) |
+
+<p align="center"> 表 1-4-2 &nbsp; IDE 下载地址 </p>
 
 ## 1.4.4 说明
 
