@@ -113,3 +113,4 @@ nav:
     # [icon: material/book-open-outline]
     - StartLearningCpp/index.md
     - 2.1 &nbsp; 正式学习 C++: StartLearningCpp/startCpp.md
+    - 2.2 &nbsp; C++ 语句: StartLearningCpp/cppStatement.md
