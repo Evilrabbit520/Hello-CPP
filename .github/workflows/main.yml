@@ -26,7 +26,7 @@ jobs:
 
       - name: Build MkDocs site
         run: |
-          mkdocs build --clean
+          mkdocs build
 
       - name: Deploy to server
         uses: appleboy/scp-action@master
