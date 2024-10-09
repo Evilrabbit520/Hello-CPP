@@ -2,14 +2,15 @@
  * @file 2-2.cpp
  * @author Hello-Cpp (www.hi-cpp.com)
  * @brief 探究变量和赋值
- * @version 1.0.0
+ * @version 1.1.0
  * @date 2024-02-26
  * 
  * @copyright Copyright (c) 2024 Hello-Cpp
  * 
  */
 
-#include <iostream>
+#include <iostream>     // 引入 iostream 头文件
+#include <string>       // 引入 string 头文件（string）
 
 using namespace std;
 
