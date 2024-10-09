@@ -114,3 +114,8 @@ nav:
     - StartLearningCpp/index.md
     - 2.1 &nbsp; 正式学习 C++: StartLearningCpp/startCpp.md
     - 2.2 &nbsp; C++ 语句: StartLearningCpp/cppStatement.md
+    - 2.3 &nbsp; C++ 语句的扩展: StartLearningCpp/cppOtherStatement.md
+- 第 3 章 &nbsp; 数据操作:
+    # [icon: material/book-open-outline]
+    - DataOperation/index.md
+    - 3.1 &nbsp; 简单变量: DataOperation/simpleVariables.md
