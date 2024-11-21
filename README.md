@@ -2,7 +2,9 @@
 
 《Hello C++》：简单易懂、一键运行的 C++ 教程。
 
-官网：[<u>https://www.hi-cpp.com/</u>](https://www.hi-cpp.com/)
+官网(Preview)：[<u>https://hello-cpp.vercel.app/</u>](https://hello-cpp.vercel.app/)
+
+官网(Stable)：[<u>https://www.hi-cpp.com/</u>](https://www.hi-cpp.com/)
 
 ## 关于本书
 
