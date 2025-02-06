@@ -124,3 +124,5 @@ nav:
     - 3.1 &nbsp; 简单变量及类型: DataOperation/simpleVariables.md
     - 3.2 &nbsp; const 常量限定符: DataOperation/constantQualifier.md
     - 3.3 &nbsp; 浮点类型: DataOperation/floatingPointTypes.md
+    - 3.4 &nbsp; 浮点类型: DataOperation/readingIncludeFiles.md
+    - 3.5 &nbsp; C++ 算数操作符: DataOperation/arithmeticOperators.md
