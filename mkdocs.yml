@@ -80,6 +80,8 @@ markdown_extensions:
   - pymdownx.superfences
   - pymdownx.tabbed:
       alternate_style: true
+  - pymdownx.arithmatex:
+      generic: true
   - attr_list
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
@@ -88,8 +90,9 @@ markdown_extensions:
 extra_css:
   - stylesheets/extra.css
 
-# extra_javascript:
-  # - javascripts/extra.js
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
 
 # Copyright
 copyright: Copyright &copy; 2024 Wang Yujia
@@ -118,5 +121,11 @@ nav:
 - 第 3 章 &nbsp; 数据操作:
     # [icon: material/book-open-outline]
     - DataOperation/index.md
-    - 3.1 &nbsp; 简单变量: DataOperation/simpleVariables.md
+    - 3.1 &nbsp; 简单变量及类型: DataOperation/simpleVariables.md
     - 3.2 &nbsp; const 常量限定符: DataOperation/constantQualifier.md
+    - 3.3 &nbsp; 浮点类型: DataOperation/floatingPointTypes.md
+    - 3.4 &nbsp; 浮点类型: DataOperation/readingIncludeFiles.md
+    - 3.5 &nbsp; C++ 算数操作符: DataOperation/arithmeticOperators.md
+    - 3.6 &nbsp; 操作符重载: DataOperation/operatorOverload.md
+    - 3.7 &nbsp; 类型转换: DataOperation/typeConversion.md
+    - 3.8 &nbsp; 小结: DataOperation/summary.md
