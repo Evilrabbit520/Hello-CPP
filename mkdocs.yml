@@ -129,3 +129,7 @@ nav:
     - 3.6 &nbsp; 操作符重载: DataOperation/operatorOverload.md
     - 3.7 &nbsp; 类型转换: DataOperation/typeConversion.md
     - 3.8 &nbsp; 小结: DataOperation/summary.md
+- 第 4 章 &nbsp; 复合类型:
+    # [icon: material/book-open-outline]
+    - CompositeTypes/index.md
+    - 4.1 &nbsp; 数组初识: CompositeTypes/arrays.md
