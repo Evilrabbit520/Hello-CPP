@@ -126,3 +126,6 @@ nav:
     - 3.3 &nbsp; 浮点类型: DataOperation/floatingPointTypes.md
     - 3.4 &nbsp; 浮点类型: DataOperation/readingIncludeFiles.md
     - 3.5 &nbsp; C++ 算数操作符: DataOperation/arithmeticOperators.md
+    - 3.6 &nbsp; 操作符重载: DataOperation/operatorOverload.md
+    - 3.7 &nbsp; 类型转换: DataOperation/typeConversion.md
+    - 3.8 &nbsp; 小结: DataOperation/summary.md
