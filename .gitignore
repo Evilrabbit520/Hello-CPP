@@ -17,6 +17,7 @@ __pycache__/
 /build
 /site
 /utils
+/generate_sitemap
 
 # test script
 test.sh
