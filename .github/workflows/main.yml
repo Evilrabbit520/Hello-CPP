@@ -1,4 +1,4 @@
-name: Deploy and upload to the server
+name: Deploy MkDocs
 
 on:
   push:
@@ -12,6 +12,11 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
+      - name: Install SSH keys
+        uses: shimataro/ssh-key-action@v2
+        with:
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          known_hosts: ${{ secrets.KNOWN_HOSTS }}
 
       - name: Set up Python
         uses: actions/setup-python@v2
@@ -27,12 +32,6 @@ jobs:
       - name: Build MkDocs site
         run: |
           mkdocs build
-
-      - name: Install SSH keys
-        uses: shimataro/ssh-key-action@v2
-        with:
-          key: ${{ secrets.SSH_PRIVATE_KEY }}
-          known_hosts: ${{ secrets.KNOWN_HOSTS }}
 
       - name: 上传到阿里云
         uses: easingthemes/ssh-deploy@main
