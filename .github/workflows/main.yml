@@ -1,4 +1,5 @@
 name: Deploy and upload to the server
+
 on:
   push:
     branches:
@@ -27,8 +28,6 @@ jobs:
         run: |
           mkdocs build
 
-      - name: Checkout repository
-        uses: actions/checkout@v2
       - name: Install SSH keys
         uses: shimataro/ssh-key-action@v2
         with:
@@ -42,7 +41,7 @@ jobs:
           SCRIPT_BEFORE: ls
           # 复制操作的参数。"-avzr --delete"意味部署时清空服务器目标目录下的文件
           ARGS: "-avzr --delete"
-          SOURCE: "public/"
+          SOURCE: "./site/*"
           REMOTE_HOST: ${{ secrets.SERVER_HOST }}
           REMOTE_USER: ${{ secrets.SERVER_HOST_NAME }}
           TARGET: ${{ secrets.SERVER_HOST_TARGET }}
