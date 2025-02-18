@@ -23,6 +23,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install mkdocs-glightbox
           pip install mkdocs mkdocs-material mkdocs-print-site-plugin
+          pip install mkdocs-simple-plugin
 
       - name: Build MkDocs site
         run: |

@@ -97,6 +97,7 @@ extra_css:
 
 extra_javascript:
   - javascripts/mathjax.js
+  - javascripts/baidu-tongji.js
   - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
 
 # Copyright
