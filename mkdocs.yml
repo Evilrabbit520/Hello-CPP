@@ -104,6 +104,7 @@ copyright: Copyright &copy; 2024-2025 Hello C++ &nbsp; | &nbsp; www.hi-cpp.com (
 
 # Page tree
 nav:
+- 主页: index.md
 - 第 0 章 &nbsp; 前言:
     # [icon: material/book-open-outline]
     - Preface/index.md
