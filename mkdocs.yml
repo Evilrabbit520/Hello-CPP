@@ -2,10 +2,14 @@
 site_name: Hello C++
 theme:
   name: material
+  logo: assets/helloC.jpg
+  favicon: assets/favicon.png
   custom_dir: overrides
   icon:
     repo: fontawesome/brands/github
   features:
+    - announce.dismiss
+    - header.autohide
     - content.action.edit
     - navigation.indexes
     - content.tabs.link
@@ -47,6 +51,7 @@ plugins:
       draggable: false
       auto_caption: false
       caption_position: bottom
+  - print-site
 
 # Repository
 repo_name: Evilrabbit520/Hello-CPP
@@ -95,7 +100,7 @@ extra_javascript:
   - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
 
 # Copyright
-copyright: Copyright &copy; 2024-2025 www.hellocpp.org
+copyright: Copyright &copy; 2024-2025 Hello C++ &nbsp; | &nbsp; www.hi-cpp.com (www.hellocpp.org)
 
 # Page tree
 nav:
@@ -118,6 +123,7 @@ nav:
     - 2.1 &nbsp; 正式学习 C++: StartLearningCpp/startCpp.md
     - 2.2 &nbsp; C++ 语句: StartLearningCpp/cppStatement.md
     - 2.3 &nbsp; C++ 语句的扩展: StartLearningCpp/cppOtherStatement.md
+    - 2.4 &nbsp; 如何运行 C++ 程序: StartLearningCpp/howToRunAProgram.md
 - 第 3 章 &nbsp; 数据操作:
     # [icon: material/book-open-outline]
     - DataOperation/index.md

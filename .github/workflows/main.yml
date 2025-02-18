@@ -1,4 +1,4 @@
-name: Deploy MkDocs
+name: Deploy and upload to the server
 
 on:
   push:
@@ -28,14 +28,23 @@ jobs:
         run: |
           mkdocs build
 
-      - name: Deploy to server
-        uses: appleboy/scp-action@master
+      - name: Install SSH keys
+        uses: shimataro/ssh-key-action@v2
         with:
-          host: ${{ secrets.SERVER_HOST }}
-          username: ${{ secrets.SERVER_USERNAME }}
-          key: ${{ secrets.SERVER_PRIVATE_KEY }}
-          source: ./site/*
-          target: /www/wwwroot/www.hi-cpp.com/
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          known_hosts: ${{ secrets.KNOWN_HOSTS }}
+
+      - name: 上传到阿里云
+        uses: easingthemes/ssh-deploy@main
+        with:
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+          SCRIPT_BEFORE: ls
+          # 复制操作的参数。"-avzr --delete"意味部署时清空服务器目标目录下的文件
+          ARGS: "-avzr --delete"
+          SOURCE: "./site/*"
+          REMOTE_HOST: ${{ secrets.SERVER_HOST }}
+          REMOTE_USER: ${{ secrets.SERVER_HOST_NAME }}
+          TARGET: ${{ secrets.SERVER_HOST_TARGET }}
 
       - name: Clean up
         run: |
