@@ -7,6 +7,8 @@
 
 # mkdocs files
 .cache/
+*.pyc
+__pycache__/
 
 # imgSrc
 /imgSrc
@@ -14,6 +16,7 @@
 # build
 /build
 /site
+/overrides/
 /utils
 
 # test script
