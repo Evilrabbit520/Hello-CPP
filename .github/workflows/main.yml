@@ -34,7 +34,7 @@ jobs:
           host: ${{ secrets.SERVER_HOST }}
           username: ${{ secrets.SERVER_USERNAME }}
           key: ${{ secrets.SERVER_PRIVATE_KEY }}
-          ARGS: "-avzr --delete"
+          rm: true # 在上传前删除目标文件夹
           source: ./site/*
           target: ${{ secrets.SERVER_TARGET }}
 
