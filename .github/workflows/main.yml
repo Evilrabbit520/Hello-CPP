@@ -1,12 +1,32 @@
-name: Copy Files to Server with Cleanup on Ubuntu 24.04_x64
+name: Deploy and upload to the server
 on:
   push:
     branches:
       - main
+
 jobs:
-  copy-files:
+  deploy:
     runs-on: ubuntu-latest
+
     steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.x
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install mkdocs-glightbox
+          pip install mkdocs mkdocs-material
+
+      - name: Build MkDocs site
+        run: |
+          mkdocs build
+
       - name: Checkout repository
         uses: actions/checkout@v2
       - name: Install SSH keys
@@ -15,20 +35,18 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           known_hosts: ${{ secrets.KNOWN_HOSTS }}
 
-      # 部署到阿里云服务器
       - name: 上传到阿里云
         uses: easingthemes/ssh-deploy@main
         with:
-          # 阿里云服务器 .ssh文件下的私钥id_rsa，存在secrets的TOKEN中
           SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
           SCRIPT_BEFORE: ls
           # 复制操作的参数。"-avzr --delete"意味部署时清空服务器目标目录下的文件
           ARGS: "-avzr --delete"
-          # 源目录，相对于仓库内容根目录的路径
           SOURCE: "public/"
-          # 远程服务器地址
           REMOTE_HOST: ${{ secrets.SERVER_HOST }}
-          # 远程服务器用户名
           REMOTE_USER: ${{ secrets.SERVER_HOST_NAME }}
-          # 目标目录（远程服务器路径）
           TARGET: ${{ secrets.SERVER_HOST_TARGET }}
+
+      - name: Clean up
+        run: |
+          rm -rf ./site/
