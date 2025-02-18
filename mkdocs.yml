@@ -47,6 +47,7 @@ plugins:
       draggable: false
       auto_caption: false
       caption_position: bottom
+  - print-site
 
 # Repository
 repo_name: Evilrabbit520/Hello-CPP
