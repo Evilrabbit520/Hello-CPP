@@ -28,9 +28,9 @@ jobs:
         run: |
           mkdocs build
 
-
-      - name: Deploy to server
-        uses: appleboy/scp-action@master
+      # 步骤三：检查服务器目标目录权限
+      - name: Check target directory permissions on server
+        uses: appleboy/ssh-action@master
         with:
           host: ${{ secrets.SERVER_HOST }}
           username: ${{ secrets.SERVER_USERNAME }}
@@ -41,9 +41,16 @@ jobs:
                 echo "Target directory is writable."
               else
                 echo "Target directory is not writable. Changing permissions..."
-                chmod 777 ${{ secrets.SERVER_TARGET }}
+                chmod 755 ${{ secrets.SERVER_TARGET }}
               fi
             fi
+
+      - name: Deploy to server
+        uses: appleboy/scp-action@master
+        with:
+          host: ${{ secrets.SERVER_HOST }}
+          username: ${{ secrets.SERVER_USERNAME }}
+          key: ${{ secrets.SERVER_PRIVATE_KEY }}
           rm: true # 在上传前删除目标文件夹
           source: ./site/*
           target: ${{ secrets.SERVER_TARGET }}
